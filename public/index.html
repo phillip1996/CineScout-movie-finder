@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineScout</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Header Section -->
+
+    <div class="container">
+        <!-- CineScout Logo -->
+        <div class="logo">
+            <h1>CineScout</h1>
+        </div>
+
+        <!-- Login Form -->
+        <form action="Home.html" method="POST" onsubmit="return validateForm()">
+            <input type="email" id="email" placeholder="Email or phone number" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit" class="login-btn">Sign In</button>
+        </form>
+
+        <!-- Standalone Remember Me Feature -->
+        <div class="remember-me-section">
+            <input type="checkbox" id="rememberMe" onclick="toggleRememberMe()">
+            <label for="rememberMe">Remember me</label>
+        </div>
+
+        <!-- Help Links -->
+        <div class="help-links">
+            <a href="#" onclick="openHelpModal()">Need help?</a>
+        </div>
+
+        <!-- Forgot Password and Sign Up Links -->
+        <div class="extra-links">
+            <a href="Forgot Password.html">Forgot Password?</a>
+            <span>|</span>
+            <a href="sign Up.html">New to Netflix? Sign Up Now</a>
+        </div>
+    </div>
+
+    <!-- Help Modal -->
+    <div id="helpModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeHelpModal()">&times;</span>
+            <h2>How can we help?</h2>
+            <ul>
+                <li><a href="Forgot Password.html">Forgot Password</a></li>
+                <li><a href="faq.html">Frequently Asked Questions</a></li>
+                <li><a href="contact.html">Contact Support</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="scripts/index.js"></script>
+</body>
+</html>

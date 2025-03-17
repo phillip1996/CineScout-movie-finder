@@ -1,0 +1,201 @@
+/* Root variables for color themes */
+:root {
+  --main-color: #e50914;
+  --secondary-color: #141414;
+  --primary-color: #ffffff;
+  --dark-red-on-hover: #f40612;
+  --other-red: #b20610;
+  --nominal-white: #b3b3b3;
+}
+
+/* ====== GLOBAL STYLES ====== */
+
+/* Reset default margin, padding, and apply global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body styles */
+body {
+  background-image: url(images/bg_2.jpg);
+  background-size: cover;
+  background-position: top; 
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  background-attachment:fixed;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: var(--primary-color);
+}
+
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: top; /* Match body's background */
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Ensure consistency */
+  transition: opacity 1s ease-in-out;
+  z-index: -1;
+  opacity: 1;
+}
+
+
+
+/* ====== HEADER STYLES ====== */
+
+/* Header container - Fixed at the top */
+.header {
+  position: absolute; /* Fix the header at the top */
+  top: 0;
+  left: 0;
+  width: 100%; /* Ensure full width */
+  display: flex;
+  justify-content: space-between; /* Space between logo and menu */
+  align-items: center;
+  background-color: var(--secondary-color); /* Dark background */
+  color: var(--primary-color); /* White text */
+  padding: 15px 20px;
+}
+
+
+/* Logo styling */
+.logo h1 {
+  font-size: 30px;
+  color: var(--main-color);
+}
+
+/* Menu container */
+.menu {
+  position: relative;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: var(--secondary-color);
+  padding: 10px 20px;
+  text-align: center;
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Centers the nav links */
+  gap: 20px; /* Spacing between links */
+}
+
+/* Individual Links */
+.nav-links li {
+  display: inline;
+}
+
+.nav-links li a {
+  text-decoration: none; /* Removes underline */
+  color: var(--nominal-white); /* Default white color */
+  font-size: 16px;
+  padding: 10px 15px;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-links li a:hover {
+  color: var(--dark-red-on-hover); /* Change color on hover */
+}
+
+
+/* ====== WELCOME SECTION ====== */
+
+/* Welcome message section */
+.welcome {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 22px;
+  color: #fff;
+  margin-top: -30vh; /* Adjust this value */
+}
+
+.welcome h1 {
+  font-size: 40px; 
+  font-weight: bold;
+}
+
+/* Style the subheading (h3) */
+.welcome h3 {
+  font-size: 22px;
+  color: var(--nominal-white);
+}
+
+
+
+/* Movie Search Section */
+.container-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.movie-search-container {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 50%;
+  max-width: 600px;
+}
+
+.movie-search-container label {
+  font-size: 18px;
+  color: white;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid white; /* Line instead of a full textbox */
+  padding: 5px;
+}
+
+.search-box input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 16px;
+  width: 100%;
+  padding: 5px;
+}
+
+.search-box button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* ===== footer ====== */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7); /* Optional styling */
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

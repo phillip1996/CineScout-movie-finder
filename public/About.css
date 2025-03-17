@@ -1,0 +1,335 @@
+/* Root Variables */
+:root {
+  --main-color: #e50914;
+  --secondary-color: #141414;
+  --text-color: #ffffff;
+  --accent-color: #b3b3b3;
+  --other-red: #b20610;
+  --dark-red-on-hover: #f40612;
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  padding-top: 70px;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--secondary-color);
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.logo h1 {
+  color: var(--main-color);
+  font-size: 30px;
+}
+
+/* Navigation */
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.navbar .nav-links li {
+  margin: 0 15px;
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover,
+.navbar .nav-links a.active {
+  color: var(--main-color);
+}
+
+/* About Section */
+.about-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.about-section .container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.about-section h2 {
+  font-size: 36px;
+  color: var(--main-color);
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 18px;
+  color: var(--accent-color);
+  margin-bottom: 20px;
+}
+
+/* Features List */
+.features-list {
+  list-style: none;
+  padding: 0;
+}
+
+.features-list li {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* Team Section */
+.team-section {
+  background: var(--text-color);
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.team-section h2 {
+  font-size: 30px;
+  color: var(--main-color);
+  margin-bottom: 20px;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.team-card {
+  background: var(--secondary-color);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 200px;
+}
+
+.team-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.team-card h3 {
+  color: var(--text-color);
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.team-card p {
+  font-size: 14px;
+  color: var(--accent-color);
+}
+
+
+/* Why Choose Section */
+.why-choose {
+  background: #222;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.why-choose h2 {
+  color: var(--main-color);
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Features Container */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+/* Each Feature Box */
+.feature {
+  background: #333;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 204, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+}
+
+/* Icons */
+.feature i {
+  font-size: 3rem;
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+
+/* Feature Headings */
+.feature h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Feature Text */
+.feature p {
+  color: #ccc;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+
+/* Testimonials Section */
+.testimonials {
+  background: #333;
+  padding: 60px 20px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Adjusted Title Spacing */
+.testimonials h2 {
+  color: var(--main-color);
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Testimonial Container (Carousel Effect) */
+.testimonial-container {
+  display: flex;
+  width: 300%;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Individual Testimonial */
+.testimonial {
+  background: #444;
+  padding: 30px;
+  border-radius: 10px;
+  min-width: 33.33%;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(255, 204, 0, 0.3);
+  margin: 0 15px;
+}
+
+/* Testimonial Text */
+.testimonial p {
+  font-style: italic;
+  color: #ccc;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/* Testimonial Author */
+.testimonial h4 {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  color: white;
+}
+
+/* Contact Us Section */
+.contact-us {
+  background: #1a1a1a;
+  padding: 60px 20px; 
+  text-align: center;
+}
+
+/* Title Styling */
+.contact-us h2 {
+  color: var(--main-color);
+  font-size: 2rem;
+  margin-bottom: 15px; /* Reduced margin for better positioning */
+}
+
+/* Paragraph Styling */
+.contact-us p {
+  color: #ccc;
+  font-size: 1rem;
+  margin-bottom: 25px; /* Adjusted spacing between paragraph and form */
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Form Styling */
+.contact-us form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Input Fields */
+.contact-us input,
+.contact-us textarea {
+  width: 80%;
+  max-width: 500px;
+  padding: 14px;
+  border-radius: 5px;
+  border: none;
+  background: #333;
+  color: white;
+  font-size: 1rem;
+}
+
+/* Textarea */
+.contact-us textarea {
+  height: 120px;
+  resize: none;
+}
+
+/* Button Styling */
+.contact-us button {
+  background: var(--main-color);
+  color: white;
+  padding: 14px 22px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+/* Button Hover Effect */
+.contact-us button:hover {
+  background: var(--dark-red-on-hover);
+  color: var(--accent-color);
+}
+
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  color: var(--text-color);
+}

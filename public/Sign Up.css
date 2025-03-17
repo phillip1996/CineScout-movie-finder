@@ -1,0 +1,120 @@
+:root {
+    --main-color: #e50914;
+    --secondary-color: #141414;
+    --primary-color: #ffff;
+    --dark-red-on-hover: #f40612;
+    --other-red: #b20610;
+    --nominal-white: #b3b3b3;
+}
+
+
+body {
+    background-image: url(images/bg_4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    color: var(--primary-color);
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 300px;
+    padding: 40px 80px;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+    text-align: center;
+}
+
+ /* Logo styling */
+.logo h1 {
+    font-size: 40px;
+    color: var(--main-color);
+    transform: translateY(-10px);
+}
+
+form h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 3px;
+    font-size: 1em;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.signup-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 1em;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 3px;
+    color: var(--primary-color);
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+/* Success Pop-Up Styling */
+.success-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-size: 18px;
+    color: #2ecc71; /* Green color */
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+/* Show Animation */
+.success-popup.show {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Green Tick */
+.checkmark {
+    font-size: 40px;
+    color: #2ecc71;
+    margin-bottom: 10px;
+}
+
+
+.signup-btn:hover {
+    background-color: var(--dark-red-on-hover);
+}
+
+.extra-links p {
+    font-size: 0.9em;
+    color: var(--nominal-white);
+}
+
+.extra-links a {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.extra-links a:hover {
+    text-decoration: underline;
+}
